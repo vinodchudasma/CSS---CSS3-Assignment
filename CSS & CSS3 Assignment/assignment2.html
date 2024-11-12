@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment2</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: auto;
+            height: 700px;
+            background-color: #007BFF;
+            clip-path: polygon(100% 0, 100% 75%, 50% 90%, 0 75%, 0 53%, 0% 0%);
+            background-image: url(https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .clipped-element {
+            width: auto;
+            height: 700px;
+            background: black;
+            opacity: 0.6    ;
+            font-weight: bold;
+
+        }
+        .header{
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            
+        }
+        li{
+            
+            font-weight: bold;
+            color: white;
+            list-style: none;
+        }
+        .logo{
+            height: 40px;
+            width: 100px;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            
+        }
+        .l{
+            width: 30%;
+            font-weight: bold;
+            color: black;
+            background: white;
+            text-align: center;
+            font-size: 30px;
+            opacity: 0.9;
+        }
+        .ogo{
+            width: 70%;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+        ul{
+            margin-top: 30px;
+            display: flex;
+            gap: 50px;
+            
+        }
+        .line_1{
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 70px;
+        }
+        .line_2{
+            color: white;
+            font-weight: bold;
+            font-size: 45px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .line_3{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .line31{
+            color: white; 
+        }
+        .line32{
+            font-size: 40px;
+            color: white;
+            text-align: center;display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .line_4{
+            text-align: center;
+            font-size: 13px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            gap: 30px;
+        }
+        .btn1 button{
+            width: 200px;
+            height: 40px;
+            background: orangered;
+            color: white;
+        }
+        .btn2 button{
+            width: 200px;
+            height: 40px;
+            color: white;
+            border: 2px solid  white;
+            background: none;
+        }
+        .side_btn{
+            display: flex;
+            justify-content: center;
+            gap: 1300px;
+            position: absolute;
+            top: 350px;
+            left: 40px;
+        }
+        .side_btn1{
+            width: 30px;
+            height: 30px;
+            background: white;
+            color: black;
+            font-size: 20px;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .side_btn2{
+            width: 30px;
+            height: 30px;
+            background: rgb(177, 13, 13);
+            color: white;
+            font-size: 20px;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .logo_2{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 610px;
+            left: 700px;
+          
+        }
+        .logo_2 img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+    <div class="clipped-element">
+        <div class="header">
+            <div class="logo">
+                <div class="l">L</div>
+                <div class="ogo">ogo</div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT US</li>
+                    <li>PORTFOLIO</li>
+                    <li>PRICING</li>
+                    <li>TEAM</li>
+                    <li>CONTACT</li>
+
+                </ul>
+            </div>
+           </div>
+           <div class="line_1">Our clints are our first priority</div>
+           <div class="line_2">WELCOME TO FOREST</div>
+           <div class="line_3">
+                <div class="line31">______________</div>
+                <div class="line32">.</div>
+                <div class="line31">______________</div>
+            </div>
+            <div class="line_4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ipsam dolorem eveniet sunt </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ipsam dolorem eveniet </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ipsam dolorem </p>
+            </div>
+            <div class="btn">
+                <div class="btn1"><button>GET STARTED NOW</button></div>
+                <div class="btn2"><button>LEARN MORE</button></div>
+            </div>
+            <div class="side_btn">
+                <div class="side_btn1"> < </div>
+                <div class="side_btn2"> > </div>
+
+            </div>
+            
+           
+        </div>
+        
+        
+       
+    </div>
+    <div class="logo_2"><img src="./img/down.svg" alt=""></div>
+    
+
+</body>
+
+</html>

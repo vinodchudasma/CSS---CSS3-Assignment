@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid>div {
+            padding: 20px;
+            color: white;
+        }
+
+        .grid {
+            width: 80vw;
+            height: auto;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto 150px;
+            grid-template-rows: 270px 270px 270px 270px;
+            gap: 13px;
+            background-color: black;
+        }
+
+        .child-1 {
+            grid-column: span 4;
+            background-image: url(https://www.shutterstock.com/shutterstock/photos/100270610/display_1500/stock-photo-young-man-swimming-large-ocean-waves-100270610.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .child-2 {
+            grid-column: span 2;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj1W3WUFKl9ugwIJg1ey3p7QJKDO2Y3cjBQg&s);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .child-3 {
+            grid-row: span 4;
+            text-align: right;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .virtical-content {
+            display: grid;
+            gap: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: grid;
+            gap: 10px;
+            font-size: 17px;
+        }
+
+        a {
+            text-decoration: none;
+            color: wheat;
+        }
+
+        i {
+            padding: 0 5px;
+        }
+
+        .child-4 {
+            background-image: url(https://img.lovepik.com/free-png/20210919/lovepik-beautiful-lady-png-image_400955523_wh1200.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .child-5 {
+            grid-column: span 4;
+            background-image: url(https://media.newyorker.com/photos/655d16e6f443dd99fc0f042a/4:3/w_1920,h_1440,c_limit/McKibben-Biggest-tree.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .child-6 {
+            background-image: url(https://media.istockphoto.com/id/1092715214/photo/two-glad-positive-grinning-lady-stand-in-glasses-spectacles-street-style-stylish-trendy-cool.jpg?s=612x612&w=0&k=20&c=ypVq4SYum8SDK8S8or7jq6svxaKMSW4eSh4l1dlnmSU=);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .child-7 {
+            grid-column: span 3;
+            background-image: url(https://i1.pickpik.com/photos/873/77/151/smile-mouth-teeth-laugh-preview.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .child-8 {
+            grid-column: span 3;
+            background-image: url(https://media.self.com/photos/57d8915250778cef321a48b3/4:3/w_2560%2Cc_limit/get-more-sun-feat.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .child-9 {
+            grid-column: span 2;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROwJhSF8H7tP8MUAhRFJIh-BbHClERFgooUA&s);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .child-10 {
+            grid-column: span 2;
+            background-image: url(https://plus.unsplash.com/premium_photo-1661963966774-7d5b6ec90d70?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG9jZWFuJTIwYmVhY2h8ZW58MHx8MHx8fDA%3D);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .child-11 {
+            grid-column: span 2;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV7_OShtMrcF-vHryLav-oXyGq8BhCklWrRQ&s);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .image-hover {
+            opacity: 0.8;
+        }
+
+        .image-hover:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="child-1 image-hover"></div>
+        <div class="child-2 image-hover"></div>
+        <div class="child-3">
+            <div class="virtical-content">
+                <div class="first-content-div">SHUTTER</div>
+                <div class="nav-content-div">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">PHOTOS</a></li>
+                        <li><a href="">BIO</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="icon-content-div">
+                    <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="child-4 image-hover"></div>
+        <div class="child-5 image-hover"></div>
+        <div class="child-6 image-hover"></div>
+        <div class="child-7 image-hover"></div>
+        <div class="child-8 image-hover"></div>
+        <div class="child-9 image-hover"></div>
+        <div class="child-10 image-hover"></div>
+        <div class="child-11 image-hover"></div>
+    </div>
+</body>
+
+</html>

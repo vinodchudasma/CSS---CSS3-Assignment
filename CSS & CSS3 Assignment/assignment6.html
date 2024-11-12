@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tablet Layout Update</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+
+.header {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu {
+    background: #ff4d4d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.hero {
+    background: #4da6ff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.main {
+    background: #00264d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.image {
+    background: #b3e0ff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.extra {
+    background: #66cc66;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner {
+    background: #ffd11a;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tablet Layout */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        grid-template-areas:
+            "header header"
+            "hero hero"
+            "menu main"
+            "banner banner"
+            "extra image";
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto 2fr 1fr 1fr;
+        
+    }
+
+    .header {
+        grid-area: header;
+        
+    }
+
+    .menu {
+        grid-area: menu; 
+        display: none;            
+    }
+
+    .hero {
+        grid-area: hero;
+    }
+
+    .main {
+        grid-area: main;
+        display:none;
+    }
+
+    .banner {
+        grid-area: banner;
+        display:none;
+    }
+
+    .extra {
+        grid-area: extra;
+        display:none;
+    }
+
+    .image {
+        grid-area: image;
+        display:none;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu1{
+        display: none;
+    }
+    .menu11{
+        display: none;
+    }
+    .main1{
+        display: none;
+    }
+
+
+    .header {
+        order: 1;
+    }
+
+    .menu {
+        order: 2;
+    }
+
+    .hero {
+        order: 3;
+    }
+
+    .main {
+        order: 4;
+    }
+
+    .banner {
+        order: 5;
+    }
+
+    .extra {
+        order: 6;
+    }
+
+    .image {
+        order: 7;
+    }
+}
+
+/* Desktop Layout */
+@media (min-width: 1025px) {
+    .container {
+        grid-template-areas:
+            "header menu"
+            "hero hero"
+            "main image"
+            "main extra"
+            "banner banner";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto 1fr 1fr auto;
+    }
+    .menu1{
+        display: none;
+    }
+    .menu11{
+        display: none;
+    }
+    .main1{
+        display: none;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .menu {
+        grid-area: menu;
+    }
+
+    .hero {
+        grid-area: hero;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .image {
+        grid-area: image;
+    }
+
+    .extra {
+        grid-area: extra;
+    }
+
+    .banner {
+        grid-area: banner;
+    }
+}
+.menu1{
+    
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.menu11{
+    padding-top: 120px;
+    text-align: center;
+    width: 20%;
+    height: 40vh;
+    background: red;
+}
+.main1{
+    
+    width: 80%;
+    height: 40vh;
+    background: black;
+    text-align: center;
+}
+.main11{
+    height: 50%;
+    background: yellow;
+    text-align: center;
+    padding: 70px;
+}
+.banner1{
+    height: 25%;
+    background: pink;
+    text-align: center;
+    padding: 30px;
+}
+.extra1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    background:aqua;
+}
+.extra11{
+    height: 100%;
+    width: 70%;
+    background: green;
+    text-align: center;
+    padding: 30px;
+
+}
+.image1{
+    height: 100%;
+    width: 75%;
+    background: orange;
+    text-align: center;
+    padding: 30px;
+
+}
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="hero">Hero</div>
+        <div class="main">Main</div>
+        <div class="banner">Banner</div>
+        <div class="extra">Extra</div>
+        <div class="image">Image</div>
+       
+    </div>
+    <div class="menu1">
+        <div class="menu11">MENU</div>
+        <div class="main1">
+            <div class="main11">MAIN</div>
+            <div class="banner1">BANNER</div>
+            <div class="extra1">
+                <div class="extra11">EXTRA</div>
+                <div class="image1">IMAGE</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

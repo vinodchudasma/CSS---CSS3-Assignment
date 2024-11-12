@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+
+        }
+
+        .img1 {
+            width: 50%;
+            background: #191a1c;
+            padding-right: 50px;
+            padding-top: 70px;
+
+
+        }
+
+        .img2 {
+            width: 50%;
+            background: pink;
+            /* display: flex; */
+            /* justify-content: end; */
+            object-fit: cover;
+        }
+
+        .img2 img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: end;
+            border-right: 4px solid red;
+            padding-right: 30px;
+            margin-top: 150px;
+
+        }
+
+        .heading h1 {
+            color: white;
+        }
+
+        .heading1 {
+            text-align: right;
+            margin-top: 50px;
+            position: relative;
+
+        }
+
+        .heading1 h3,
+        p {
+            color: red;
+        }
+        .heading1 p {
+            color: white;
+        }
+
+        .one {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            top: 5px;
+            right: -75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .one img {
+            width: 60%;
+            height: 60%;
+            object-fit: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        
+
+        <div class="img1">
+            <div class="heading">
+                <h1>OUR SERVICE</h1>
+            </div>
+            <div class="heading1">
+                <h3>WEB DESIGN</h3>
+                <P> We are providing our best service in web design and web devlopment <br> for and queary please contact us. </P>
+                <div class="one">
+                    <img src="./pcimg.svg" alt="">
+                </div>
+            </div>
+            <div class="heading1">
+                <h3>PRINT DESIGN</h3>
+                <P> We are providing our best service in print design and web devlopment <br> for and queary please contact us. </P>
+                <div class="one">
+                    <img src="./printer.svg" alt="">
+                </div>
+            </div>
+            <div class="heading1">
+                <h3>PHOTOGRAPHY</h3>
+                <P> We are providing our best service in photography and videography <br> for and queary please contact us. </P>
+                <div class="one">
+                    <img src="./camera1.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="img2">
+            <img src="./bgimage3.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
